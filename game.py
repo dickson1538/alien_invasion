@@ -30,8 +30,18 @@ class AlienInvasion:
         while True:
             self._check_events()
             self.ship.update()
-            self.bullets.update()
+            self._update_bullets()
             self._update_screen()
+    def _update_bullets(self):
+
+        self.bullets.update()
+
+# GET RID OF BULLETS THAT HAVE DISAPPEARED
+        for bullet in self.bullets.copy():
+            if bullet.rect.bottom <=0:
+                self.bullets.remove(bullet)
+        print(len(self.bullets))
+
 
     def _check_events(self):
         for event in pygame.event.get():
@@ -59,8 +69,10 @@ class AlienInvasion:
             self.ship.moving_left = False
 
     def _fire_bullet(self):
-        new_bullet = Bullet(self)
-        self.bullets.add(new_bullet)
+# UPDATE POSITTION OF BULLETS AND RID OF THE OLD BULLETS
+        if len(self.bullets) < self.settings.bullet_allowed:
+            new_bullet = Bullet(self)
+            self.bullets.add(new_bullet)
 
     def _update_screen(self):
 
