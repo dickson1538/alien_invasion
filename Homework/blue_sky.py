@@ -6,6 +6,7 @@ while True:
     screen.fill((0, 0, 240))
     pygame.display.flip()
 
+
 # or no loop and use a .timesleep
 
 
@@ -14,6 +15,7 @@ def __init__(self):
     self.rect - self.image.get_rect()
     self.rect.midbottom = self.screen_rect.midbottom
     self.ship = Ship(self)
+
 
 def blitme(self):
     self.screen.blit(self.image, self.rect)
