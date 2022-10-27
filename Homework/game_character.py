@@ -8,7 +8,7 @@ class Gamecharacter:
         # initialize the game and create game resources
 
         self.screen = pygame.display.set_mode((800, 500))
-        self.ship = pygame.image.load('Untitled.png')
+        self.ship = pygame.image.load('ship_0007.png')
         self.ship_rect = self.ship.get_rect()
         self.screen_rect = self.screen.get_rect()
 
