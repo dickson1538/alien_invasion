@@ -6,7 +6,8 @@ class Bullet(Sprite):
 
     def __init__(self, ai_game):
         super().__init__()
-        self.screen = ai_game.screen
+        self.screen = ai_game
+        self.settings = ai_game.settings
         self.bullet_speed = 1.0
         self.bullet_width = 3
         self.bullet_height = 15

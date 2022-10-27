@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3feb2e-072d-485c-97fe-299343b89713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework/HW_bullet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/12-6/SHIP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/12-6/SIDE_shoot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/12-6/Side_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/HW_bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/12-6/HW_bullet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework/game_character.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/game_character.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/ship_0007.png" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/12-6/ship_0007.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework/sideways_shooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/sideways_shooter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Homework\12-6" />
       <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Homework" />
     </key>
   </component>
