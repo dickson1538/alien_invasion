@@ -12,7 +12,8 @@ class Gamecharacter:
         self.ship_rect = self.ship.get_rect()
         self.screen_rect = self.screen.get_rect()
 
-        self.ship_rect.center = self.screen_rect.center
+        self.ship_rect.right = self.screen_rect.width
+        self.ship_rect.y = self.screen_rect.height / 2
 
         self.moving_right = False
         self.moving_left = False
@@ -64,7 +65,7 @@ class Gamecharacter:
             self.update_screen()
 
     def update_screen(self):
-        self.screen.fill((255, 255, 255))
+        self.screen.fill
         self.screen.blit(self.ship, self.ship_rect)
         pygame.display.flip()
 

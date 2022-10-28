@@ -14,12 +14,10 @@ class RocketGame:
         self.settings = game.settings
         self.screen_rect = game.screen.get_rect()
 
-        self.image = pygame.image.load("ship_0005.png")
+        self.image = pygame.image.load("12-6/side/ship_0005.png")
         self.rect = self.image.get_rect()
-        self.rocketocket = Rocket(self)
 
         pygame.display.set_caption("Rocket Game")
-
 
         self.rect.center = self.screen_rect.center
 
@@ -36,6 +34,7 @@ class RocketGame:
             self._check_events()
             self.rocket.update()
             self._update_screen()
+
 
     def update(self):
         if self.moving_right and self.rect.right < self.screen_rect.right:
@@ -81,9 +80,6 @@ class RocketGame:
         elif event.key == pygame.K_DOWN:
             self.rocket.moving_down = False
 
-
-
-
     def blitme(self):
         self.screen.blit(self.image, self.rect)
 
@@ -93,7 +89,7 @@ class RocketGame:
 
         pygame.display.flip()
 
+
 if __name__ == '__main__':
     ai = RocketGame()
     ai.run_game()
-

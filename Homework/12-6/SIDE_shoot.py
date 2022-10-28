@@ -2,9 +2,9 @@ import pygame
 import sys
 from SHIP import Ship
 from Side_settings import Settings
+from HW_bullet import Bullet
 
 
-class AlienInvasion:
 
     def __init__(self):
         pygame.init()
@@ -18,9 +18,12 @@ class AlienInvasion:
 
         self.bullets = pygame.sprite.Group()
 
-        self.screen = pygame.display.set_mode((800, 800))
-        self.settings.screen_width = self.screen.get_rect().width
-        self.settings.screen_height = self.screen.get_rect().height
+    def run_game(self):
+        while True:
+            self._check_events()
+            self.ship.update()
+            self.bullets.update()
+            self._update_screen()
 
     def _check_events(self):
         for event in pygame.event.get():
@@ -33,6 +36,9 @@ class AlienInvasion:
                 if event.key == pygame.K_DOWN:
                     self.ship.moving_down = True
 
+                if event.key == pygame.K_SPACE:
+                    self._fire_bullet()
+
 
             elif event.type == pygame.KEYUP:
                 if event.key == pygame.K_UP:
@@ -40,18 +46,22 @@ class AlienInvasion:
                 if event.key == pygame.K_DOWN:
                     self.ship.moving_down = False
 
+    def _fire_bullet(self):
+        if len(self.bullets) < self.settings.bullet_allowed:
+            new_bullet = Bullet(self)
+            self.bullets.add(new_bullet)
 
-    def run_game(self):
-        while True:
-            self._check_events()
-            self.ship.update()
-            self._update_screen()
+    def _update_bullets(self):
+        self.bullets.update()
+        for bullet in self.bullets.copy():
+            if bullet.rect.left >= self.screen.get_rect().right:
+                self.bullets.remove(bullet)
 
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()
-
-
+        for bullet in self.bullets.sprites():
+            bullet.draw_bullet()
 
         pygame.display.flip()
 

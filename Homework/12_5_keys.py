@@ -3,8 +3,7 @@ import pygame
 
 
 
-class KeyGame:
-
+class Key:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((400, 400))
@@ -23,7 +22,11 @@ class KeyGame:
 
     def _check_keydown_events(self, event):
         print(event.key)
-        if event.key == pygame.K_q:
+        if event.key == pygame.K_RIGHT:
+            self.moving_right = True
+        elif event.key == pygame.K_LEFT:
+            self.moving_left = True
+        elif event.key == pygame.K_q:
             sys.exit()
 
     def _update_screen(self):
@@ -33,5 +36,5 @@ class KeyGame:
 
 
 if __name__ == '__main__':
-    kg = KeyGame()
+    kg = Key()
     kg.run_game()
