@@ -7,6 +7,10 @@ class Settings:
 
         self.ship_speed = 1.5
 
+        self.alien_speed = 1
+        self.fleet_drop_speed = 10  # how quickly the fleet drops down
+        self.fleet_direction = 1   # 1 means right -1 means left
+
         self.bullet_speed = 1
         self.bullet_width = 5
         self.bullet_height = 15
