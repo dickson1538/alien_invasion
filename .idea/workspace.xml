@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3feb2e-072d-485c-97fe-299343b89713" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-1 stars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/star.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_stats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter 12/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter 12/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter 12/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter 12/bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Rocket.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/game_character.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/game_character.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/m251419/Downloads/EW200/Labs/Lab 7/alien_invasion/Chapter 12&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/m251419/Downloads/EW200/Labs/Lab 7/alien_invasion",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Chapter 12" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Homework\CH_13" />
       <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\images" />
       <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Homework\12-6" />
       <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Homework\12-6\side" />

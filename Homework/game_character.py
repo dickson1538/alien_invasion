@@ -65,7 +65,7 @@ class Gamecharacter:
             self.update_screen()
 
     def update_screen(self):
-        self.screen.fill
+        self.screen.fill((0,0,0 ))
         self.screen.blit(self.ship, self.ship_rect)
         pygame.display.flip()
 
