@@ -2,16 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf3feb2e-072d-485c-97fe-299343b89713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-1 stars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework/CH_13/star.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-5/alien.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-5/bullet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-5/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-5/ship.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework/CH_13/13-5/side.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/game_character.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/game_character.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter 12/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/HW_bullet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/SHIP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/SIDE_shoot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/Side_settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/ship_0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/side/Open Notebook.onetoc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/side/bullet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/side/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/side/ship.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/side/ship_0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/side/side.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12-6/sideways_shooter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/12_5_keys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/CH_13/13-1 stars.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/CH_13/13-1 stars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/CH_13/13-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/CH_13/13-2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/CH_13/13-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/CH_13/13-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/blue_sky.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/game_character.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/playground.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,22 +51,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2G2J2wjEBYCgCn5thQ9XxU762c8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/m251419/Downloads/EW200/Labs/Lab 7/alien_invasion",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/m251419/Downloads/EW200/Labs/Lab 7/alien_invasion/Homework/CH_13/13-5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Homework\CH_13\13-5" />
       <recent name="C:\Users\m251419\Downloads\EW200\Labs\Lab 7\alien_invasion\Chapter 12" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

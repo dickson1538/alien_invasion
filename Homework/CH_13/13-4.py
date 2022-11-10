@@ -3,11 +3,12 @@ from pygame.sprite import Sprite
 
 
 class Settings:
+
     def __init__(self):
-        self.screen_width = 600
-        self.screen_height = 600
+        self.screen_width = 500
+        self.screen_height = 500
         self.bg_color = (0, 0, 0)
-        self.raindrop_speed = .2
+        self.raindrop_speed = .3
 
 
 class Raindrop(Sprite):
@@ -21,16 +22,20 @@ class Raindrop(Sprite):
 
         self.rect.x = self.rect.width
         self.rect.y = self.rect.height
-
-        print(self.rect.width)
         self.y = float(self.rect.y)
+
+    def check_disappeared(self):
+        if self.rect.top > self.screen.get_rect().bottom:
+            return True
+        else:
+            return False
 
     def update(self):
         self.y += self.settings.raindrop_speed
         self.rect.y = self.y
 
 
-class Raindrops:
+class RaindropsGame:
 
     def __init__(self):
         pygame.init()
@@ -43,11 +48,12 @@ class Raindrops:
 
     def run_game(self):
         while True:
-            self.checkevents()
+            self._check_events()
             self.raindrops.update()
+            self._update_raindrops()
             self._update_screen()
 
-    def checkevents(self):
+    def _check_events(self):
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -58,14 +64,14 @@ class Raindrops:
         drop = Raindrop(self)
         drop_width, drop_height = drop.rect.size
         available_space_x = self.settings.screen_width - drop_width
-        number_drops_x = available_space_x // (2 * drop_width)
+
+        self.number_drops_x = available_space_x // (2 * drop_width)
 
         available_space_y = self.settings.screen_height
         number_rows = available_space_y // (2 * drop_height)
 
         for row_number in range(number_rows):
-            for drop_number in range(number_drops_x):
-                self._create_drop(drop_number, row_number)
+            self._create_row(row_number)
 
     def _create_drop(self, drop_number, row_number):
         drop = Raindrop(self)
@@ -75,6 +81,23 @@ class Raindrops:
         drop.rect.y = drop.y
         self.raindrops.add(drop)
 
+    def _create_row(self, row_number):
+        for drop_number in range(self.number_drops_x):
+            self._create_drop(drop_number, row_number)
+
+    def _update_raindrops(self):
+
+        self.raindrops.update()
+
+        make_new_drops = False
+        for drop in self.raindrops.copy():
+            if drop.check_disappeared():
+                self.raindrops.remove(drop)
+                make_new_drops = True
+
+        if make_new_drops:
+            self._create_row(0)
+
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
         self.raindrops.draw(self.screen)
@@ -83,5 +106,6 @@ class Raindrops:
 
 
 if __name__ == '__main__':
-    rd_game = Raindrops()
+    # Make a game instance, and run the game.
+    rd_game = RaindropsGame()
     rd_game.run_game()
