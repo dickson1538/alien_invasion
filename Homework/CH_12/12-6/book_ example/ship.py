@@ -15,7 +15,7 @@ class Ship:
         self.image = pygame.transform.rotate(self.image, 270)
         self.rect = self.image.get_rect()
 
-        # Start each new ship at the center of the left side of the screen.
+        # Start each new ship at the center of the left book_ example of the screen.
         self.rect.midleft = self.screen_rect.midleft
 
         # Store a decimal value for the ship's vertical position.

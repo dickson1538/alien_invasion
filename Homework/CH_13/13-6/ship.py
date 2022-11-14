@@ -9,7 +9,6 @@ class Ship:
 
         self.screen_rect = ai_game.screen.get_rect()
         self.image = pygame.image.load("ship_0007.png")
-        self.image =  pygame.transform.scale(self.image,(60,60))
         self.image_rotate = pygame.transform.rotate(self.image, 270)
         self.rect = self.image.get_rect()
 

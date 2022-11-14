@@ -11,7 +11,7 @@ while True:
 
 
 def __init__(self):
-    self.image = pygame.image.load('12-6/side/ship_0005.png')
+    self.image = pygame.image.load('12-6/book_ example/ship_0005.png')
     self.rect - self.image.get_rect()
     self.rect.midbottom = self.screen_rect.midbottom
     self.ship = Ship(self)

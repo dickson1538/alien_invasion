@@ -15,7 +15,7 @@ class Ship:
         self.image = pygame.image.load('ship.bmp')
         self.rect = self.image.get_rect()
 
-        # Start each new ship at the center of the left side of the screen.
+        # Start each new ship at the center of the left book_ example of the screen.
         self.rect.midbottom = self.screen_rect.midbottom
 
         # Store a decimal value for the ship's vertical position.

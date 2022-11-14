@@ -7,7 +7,7 @@ TILE_SIZE = 50
 
 screen = pygame.display.set_mode((10*TILE_SIZE, 10*TILE_SIZE))
 screen_rec = screen.get_rect()
-star = pygame.image.load("star.bmp")
+star = pygame.image.load("images/star.bmp")
 star = pygame.transform.scale(star, (50, 50))
 
 star_rec = star.get_rect()

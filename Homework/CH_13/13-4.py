@@ -16,7 +16,7 @@ class Raindrop(Sprite):
         super().__init__()
         self.screen = rd_game.screen
         self.settings = rd_game.settings
-        self.image = pygame.image.load('rain.png')
+        self.image = pygame.image.load('images/rain.png')
         self.image = pygame.transform.scale(self.image, (50, 50))
         self.rect = self.image.get_rect()
 
